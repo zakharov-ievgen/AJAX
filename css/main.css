@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(154, 184, 243);
+}
+.info-wrapper {
+  margin: auto;
+  background-color: rgb(154, 184, 243);
+  padding: 50px;
+}
+.weather-box {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  background-color: blue;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+.item {
+  margin-top: 35px;
+  color: rgb(240, 240, 10);
+  font-size: 18px;
+}
+.icon-css {
+  display: block;
+}
