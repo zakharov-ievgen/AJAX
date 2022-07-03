@@ -2,7 +2,8 @@ fetch("http://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=
     .then((response) => response.json())
     .then((data) => {
         document.querySelector(".city").innerHTML = "City" + " is " + JSON.stringify(data.name);
-        document.querySelector(".temp").innerHTML = "Temperature" + " is " + JSON.stringify(data.main.temp) + " C ";
+        document.querySelector(".temp").innerHTML =
+            "Temperature" + " is " + Math.round(JSON.stringify(data.main.temp)) + " &deg ";
         document.querySelector(".pressure").innerHTML =
             "Pressure" + " is " + JSON.stringify(data.main.pressure) + " hPa ";
         document.querySelector(".humidity").innerHTML =
